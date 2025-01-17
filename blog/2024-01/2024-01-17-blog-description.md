@@ -36,3 +36,7 @@ yarn build
 ## h2
 ### h3
 ```
+
+### 4. 코드 하이라이트가 안되는 경우 추가 설정
+
+`docusaurus.config.js` 파일에 
