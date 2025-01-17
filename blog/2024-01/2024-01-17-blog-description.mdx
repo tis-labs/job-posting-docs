@@ -50,19 +50,42 @@ yarn build
 
 highlight-next-line, highlight-start, highlight-end 방식으로 주석을 추가하면 된다.
 
-```
-@Service
-public class ExtractJobPostingService {
-    public String execute(TargetSource item) throws Exception {
-        return switch (item) {
-            // highlight-start
-            case NAVER -> new NaverJobPostingExtractor(item.getUrl()).extract();
-            // highlight-end
-            case NHN -> "NHN";
-            case KAKAO -> "KAKAO";
-        };
-    }
-}
-```
+```jsx
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-
+<Tabs>
+    <TabItem value="asis" label="Apple" default>
+        ```
+        @Service
+        public class ExtractJobPostingService {
+            public String execute(TargetSource item) throws Exception {
+                return switch (item) {
+                    // highlight-start
+                    case NAVER -> new NaverJobPostingExtractor(item.getUrl()).extract();
+                    // highlight-end
+                    case NHN -> "NHN";
+                    case KAKAO -> "KAKAO";
+                };
+            }
+        }
+        ```
+    </TabItem>
+    <TabItem value="tobe" label="Orange">
+        ```java
+        @Service
+        public class ExtractJobPostingService {
+            public String execute(TargetSource item) throws Exception {
+                return switch (item) {
+                    // highlight-start
+                    case NAVER -> new NaverJobPostingExtractor(item.getUrl()).extract();
+                    // highlight-end
+                    case NHN -> "NHN";
+                    case KAKAO -> "KAKAO";
+                };
+            }
+        }
+        ```
+    </TabItem>
+</Tabs>
+```
