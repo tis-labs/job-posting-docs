@@ -48,7 +48,21 @@ yarn build
 
 ![image](./img/2024-01-17-blog-description-01.png)
 
-
 highlight-next-line, highlight-start, highlight-end 방식으로 주석을 추가하면 된다.
+
+```java
+@Service
+public class ExtractJobPostingService {
+    public String execute(TargetSource item) throws Exception {
+        return switch (item) {
+            // highlight-start
+            case NAVER -> new NaverJobPostingExtractor(item.getUrl()).extract();
+            // highlight-end
+            case NHN -> "NHN";
+            case KAKAO -> "KAKAO";
+        };
+    }
+}
+```
 
 
