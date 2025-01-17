@@ -2,3 +2,8 @@ docusaurus:
   label: Docusaurus
   permalink: /docusaurus
   description: Docusaurus tag description
+
+job-posting-collector:
+  label: Job Posting Collector
+  permalink: /job-posting-collector
+  description: Job Posting Collector
