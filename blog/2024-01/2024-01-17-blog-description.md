@@ -5,9 +5,6 @@ authors: [this-is-spear]
 tags: [docusaurus]
 ---
 
-import BrowserWindow from '@site/src/components/BrowserWindow';
-import CodeBlock from '@theme/CodeBlock';
-
 블로그는 [Docusaurus](https://docusaurus.io/)를 사용하여 만들었습니다.
 
 ## 작성시 주의사항
@@ -53,12 +50,6 @@ yarn build
 
 highlight-next-line, highlight-start, highlight-end 방식으로 주석을 추가하면 된다.
 
-```mdx-code-block
-<BrowserWindow>
-<Tabs>
-<TabItem value="plaintext" label="AsIs">
-```
-
 ```plaintext
 @Service
 public class ExtractJobPostingService {
@@ -72,30 +63,4 @@ public class ExtractJobPostingService {
         };
     }
 }
-```
-
-```mdx-code-block
-</TabItem>
-<TabItem value="java" label="ToBe">
-```
-
-```java
-@Service
-public class ExtractJobPostingService {
-    public String execute(TargetSource item) throws Exception {
-        return switch (item) {
-            // highlight-start
-            case NAVER -> new NaverJobPostingExtractor(item.getUrl()).extract();
-            // highlight-end
-            case NHN -> "NHN";
-            case KAKAO -> "KAKAO";
-        };
-    }
-}
-```
-
-```mdx-code-block
-</TabItem>
-</Tabs>
-</BrowserWindow>
 ```
