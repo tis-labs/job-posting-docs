@@ -50,7 +50,7 @@ yarn build
 
 highlight-next-line, highlight-start, highlight-end 방식으로 주석을 추가하면 된다.
 
-```java
+```
 @Service
 public class ExtractJobPostingService {
     public String execute(TargetSource item) throws Exception {
