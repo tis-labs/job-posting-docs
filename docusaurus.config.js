@@ -142,6 +142,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
+        additionalLanguages: ['java'],
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
