@@ -40,3 +40,15 @@ yarn build
 ### 4. 코드 하이라이트가 안되는 경우 추가 설정
 
 `docusaurus.config.js` 파일에 
+
+
+### 5. 라인 하이라이트
+
+아래처럼 [Line highlighting](https://docusaurus.io/docs/markdown-features/code-blocks#line-highlighting) 하는 방식도 있습니다.
+
+![image](./img/2024-01-17-blog-description-01.png)
+
+
+highlight-next-line, highlight-start, highlight-end 방식으로 주석을 추가하면 된다.
+
+
