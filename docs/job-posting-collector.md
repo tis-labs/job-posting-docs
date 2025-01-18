@@ -1,12 +1,8 @@
 ---
-slug: 2024-01-17-batch
-title: 배치 구현 및 동작 방식 정리
-authors: [this-is-spear]
-tags: [job-posting-collector]
+sidebar_position: 2
 ---
 
-
-## Job Posting Collector 구현 내용 정리
+## Job Posting Collector 동작 정리
 
 ### 배치 구성
 
@@ -152,7 +148,7 @@ public class ExtractJobPostingService {
 }
 ```
 
-## Batch 관련 정보 정리
+## Batch 동작 정리
 
 ### Job 실행하는 방법
 
@@ -191,8 +187,4 @@ public class BatchAutoConfiguration {
     // ...
 }
 ```
-
-
-
-
 
